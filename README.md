@@ -61,8 +61,8 @@ PaperAI is a comprehensive platform designed to integrate and collect academic p
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/paperai.git
-   cd paperai
+   git clone https://github.com/hjjang1360/arXiv_search.git
+   cd arXiv_search
    ```
 
 2. Install dependencies:
