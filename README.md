@@ -1,92 +1,127 @@
-이 프로젝트는 [`EasyNext`](https://github.com/easynext/easynext)를 사용해 생성된 [Next.js](https://nextjs.org) 프로젝트입니다.
+# PaperAI - Academic Paper Search & Management Platform
+
+PaperAI is a comprehensive platform designed to integrate and collect academic paper metadata from various databases (arXiv, DBpia, KCI, Google Scholar). It enables efficient paper search, direct PDF downloads, and personalized search capabilities for researchers and academics.
+
+## Target Users
+
+- Graduate students
+- Researchers
+- Professors
+- Industry researchers
+- Library staff
+
+## Core Features
+
+### Search & Discovery
+- 🔍 **Integrated Search**: Unified search across multiple academic databases
+- 📚 **Multi-Database Support**: Access papers from arXiv, DBpia, KCI, and Google Scholar
+- 🎯 **Advanced Filtering**: Filter by year, author, category, and more
+- 📝 **Keyword Autocomplete**: Smart suggestions for search queries
+- 🔖 **Bookmarking**: Save and organize papers for later reference
+
+### Paper Management
+- 📄 **PDF Access**: Direct download of available papers
+- 🌐 **DOI Integration**: Quick access to paper details and citations
+- 📋 **Metadata Display**: Comprehensive paper information including:
+  - Title and authors
+  - Publication date
+  - Categories and tags
+  - Abstract
+  - Citation information
+
+### User Experience
+- 📱 **Responsive Design**: Optimized for all devices
+- 🎨 **Modern UI**: Clean interface built with Tailwind CSS
+- ⚡ **Fast Response**: Optimized search response speed
+- 🔄 **Real-time Updates**: Instant search results
+
+## Tech Stack
+
+### Frontend
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+- React Hooks
+
+### APIs & Integration
+- arXiv API for paper search
+- DOI API for paper metadata
+- (Planned) DBpia API integration
+- (Planned) KCI API integration
+- (Planned) Google Scholar integration
 
 ## Getting Started
 
-개발 서버를 실행합니다.<br/>
-환경에 따른 명령어를 사용해주세요.
+### Prerequisites
+- Node.js 18.0.0 or later
+- npm or yarn
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/paperai.git
+   cd paperai
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+│   ├── page.tsx        # Home page
+│   ├── search/         # Search page
+│   ├── about/          # About page
+│   └── contact/        # Contact page
+├── components/         # React components
+│   ├── Navigation.tsx  # Navigation bar
+│   └── PaperCard.tsx   # Paper display card
+└── lib/               # Utility functions
+    └── arxiv.ts       # arXiv API integration
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 결과를 확인할 수 있습니다.
+## Current Implementation Status
 
-`app/page.tsx` 파일을 수정하여 페이지를 편집할 수 있습니다. 파일을 수정하면 자동으로 페이지가 업데이트됩니다.
+### Completed Features
+- Basic arXiv paper search integration
+- Paper metadata display
+- PDF download functionality
+- DOI link integration
+- Responsive UI design
+- Basic search interface
 
-## 기본 포함 라이브러리
+### Planned Features
+- Multi-database integration (DBpia, KCI, Google Scholar)
+- Advanced filtering options
+- User authentication system
+- Bookmarking functionality
+- Search history
+- Multi-language support
+- Advanced search analytics
 
-- [Next.js](https://nextjs.org)
-- [React](https://react.dev)
-- [Tailwind CSS](https://tailwindcss.com)
-- [TypeScript](https://www.typescriptlang.org)
-- [ESLint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [Shadcn UI](https://ui.shadcn.com)
-- [Lucide Icon](https://lucide.dev)
-- [date-fns](https://date-fns.org)
-- [react-use](https://github.com/streamich/react-use)
-- [es-toolkit](https://github.com/toss/es-toolkit)
-- [Zod](https://zod.dev)
-- [React Query](https://tanstack.com/query/latest)
-- [React Hook Form](https://react-hook-form.com)
-- [TS Pattern](https://github.com/gvergnaud/ts-pattern)
+## Contributing
 
-## 사용 가능한 명령어
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-한글버전 사용
-
-```sh
-easynext lang ko
-```
-
-최신버전으로 업데이트
-
-```sh
-npm i -g @easynext/cli@latest
-# or
-yarn add -g @easynext/cli@latest
-# or
-pnpm add -g @easynext/cli@latest
-```
-
-Supabase 설정
-
-```sh
-easynext supabase
-```
-
-Next-Auth 설정
-
-```sh
-easynext auth
-
-# ID,PW 로그인
-easynext auth idpw
-# 카카오 로그인
-easynext auth kakao
-```
-
-유용한 서비스 연동
-
-```sh
-# Google Analytics
-easynext gtag
-
-# Microsoft Clarity
-easynext clarity
-
-# ChannelIO
-easynext channelio
-
-# Sentry
-easynext sentry
-
-# Google Adsense
-easynext adsense
-```
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
